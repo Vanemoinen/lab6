@@ -36,3 +36,26 @@ function addProjectDetails(e) {
 function randomizeColors(e) {
 	console.log("User clicked on color button");
 }
+
+$("#testjs").click(function(e) {
+	$.get("/project/random", addProject);
+})
+
+function addProject(result) {
+	console.log(result);
+	var detailsImage '<a href"#" class="thumbnail">' + 
+		'<img src="' + result['image'] + '" class="img">' +
+		'<p>' + result['title'] + '</p>' +
+		'<p><small>' + result['date'] + '</small></p></a>'; 
+}
+
+$("#.details")
+<div str = html("") >
+</div>
+
+
+$('body').css('background-color', colors[0]);
+$('.thumbnail').css('background-color', colors[1]);
+$('h1, h2, h3, h4, h5, h5').css('color', colors[2]);
+$('p').css('color', colors[3]);
+$('.project img').css('opacity', .75);
